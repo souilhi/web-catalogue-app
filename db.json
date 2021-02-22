@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "name": "Printer",
+      "price": "21000",
+      "quantity": "300",
+      "available": true,
+      "selected": false
+    },
+    {
+      "id": 3,
+      "name": "smart Phont",
+      "price": "21000",
+      "quantity": "20",
+      "available": false,
+      "selected": true
+    },
+    {
+      "name": "Clavier",
+      "price": "28000",
+      "quantity": "200",
+      "available": true,
+      "selected": false,
+      "id": 4
+    }
+  ]
+}
