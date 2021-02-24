@@ -35,4 +35,8 @@ export class ProductService {
     selectedProduct.selected = !selectedProduct.selected;
     return this.http.delete<void>(host + 'products/' + selectedProduct.id);
   }
+  save(Product: ProductModel): Observable<ProductModel>{
+    const host = environment.host;
+    return this.http.post<ProductModel>(host + 'products', Product);
+  }
 }

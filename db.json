@@ -21,8 +21,16 @@
       "price": "28000",
       "quantity": "200",
       "available": true,
-      "selected": true,
+      "selected": false,
       "id": 4
+    },
+    {
+      "name": "mouse",
+      "price": "200",
+      "quantity": "5550",
+      "selected": true,
+      "available": false,
+      "id": 5
     }
   ]
 }

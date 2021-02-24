@@ -1,5 +1,6 @@
-<div class="container">
-  <form >
+<div class="container" *ngIf="productFormGroup">
+  <!--{{productFormGroup.value | json}}-->
+  <form [formGroup]="productFormGroup">
     <div class="form-group">
       <label >Name</label>
       <input type="text" class="form-control" formControlName="name">
@@ -20,6 +21,6 @@
       <label>Available</label>
       <input type="checkbox" class="form-check" formControlName="available">
     </div>
-    <button class="btn btn-success">Save</button>
+    <button class="btn btn-success"(click)="saveProduct()" >Save</button>
   </form>
 </div>

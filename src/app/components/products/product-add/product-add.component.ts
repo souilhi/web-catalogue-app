@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {ProductService} from '../../../services/products.service';
 
 @Component({
   selector: 'app-product-add',
@@ -8,8 +9,9 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 })
 export class ProductAddComponent implements OnInit {
 
-  public productFormGroup?: FormGroup;
-  constructor(private fb: FormBuilder) { }
+   // @ts-ignore
+  productFormGroup: FormGroup;
+  constructor(private fb: FormBuilder, private product:ProductService) { }
 
   ngOnInit(): void {
     this.productFormGroup = this.fb.group({
@@ -23,4 +25,10 @@ export class ProductAddComponent implements OnInit {
 /*
 
 * */
+  saveProduct() {
+    this.product.save(this.productFormGroup.value).subscribe(data =>{
+      alert("succes savaing product")
+    })
+    console.log(this.productFormGroup.value)
+  }
 }
