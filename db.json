@@ -6,7 +6,7 @@
       "price": "21000",
       "quantity": "300",
       "available": true,
-      "selected": false
+      "selected": true
     },
     {
       "id": 3,
@@ -21,7 +21,7 @@
       "price": "28000",
       "quantity": "200",
       "available": true,
-      "selected": false,
+      "selected": true,
       "id": 4
     }
   ]
