@@ -77,8 +77,9 @@ export class ProductsComponent implements OnInit {
     }
   }
 
-  edit(p: ProductModel) {
-    console.log('edit');
+  onEdit(p: ProductModel) {
+    console.log(p);
+    this.router.navigateByUrl('/edit-product/'+p.id);
   }
 
   onAddProductProducts() {

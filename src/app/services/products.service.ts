@@ -39,4 +39,12 @@ export class ProductService {
     const host = environment.host;
     return this.http.post<ProductModel>(host + 'products', Product);
   }
+  getProducts(id:number): Observable<ProductModel>{
+    const host = environment.host;
+    return this.http.get<ProductModel>(host + 'products/'+id);
+  }
+  updateProducts(product:ProductModel): Observable<ProductModel>{
+    const host = environment.host;
+    return this.http.put<ProductModel>(host + 'products/'+product.id,product);
+  }
 }

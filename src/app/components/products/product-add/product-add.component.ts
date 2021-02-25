@@ -11,6 +11,7 @@ export class ProductAddComponent implements OnInit {
 
    // @ts-ignore
   productFormGroup: FormGroup;
+  submitted:boolean=false;
   constructor(private fb: FormBuilder, private product:ProductService) { }
 
   ngOnInit(): void {
@@ -26,6 +27,8 @@ export class ProductAddComponent implements OnInit {
 
 * */
   saveProduct() {
+    this.submitted = true;
+    if (this.productFormGroup.invalid) return;
     this.product.save(this.productFormGroup.value).subscribe(data =>{
       alert("succes savaing product")
     })

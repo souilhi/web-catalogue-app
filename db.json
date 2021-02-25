@@ -2,11 +2,11 @@
   "products": [
     {
       "id": 2,
-      "name": "Printer",
+      "name": "Printersss",
       "price": "21000",
       "quantity": "300",
-      "available": true,
-      "selected": true
+      "selected": true,
+      "available": false
     },
     {
       "id": 3,
@@ -17,12 +17,12 @@
       "selected": true
     },
     {
+      "id": 4,
       "name": "Clavier",
       "price": "28000",
       "quantity": "200",
-      "available": true,
       "selected": false,
-      "id": 4
+      "available": false
     },
     {
       "name": "mouse",
@@ -31,6 +31,14 @@
       "selected": true,
       "available": false,
       "id": 5
+    },
+    {
+      "name": "Batterie",
+      "price": "55440",
+      "quantity": "344440",
+      "selected": true,
+      "available": false,
+      "id": 6
     }
   ]
 }
